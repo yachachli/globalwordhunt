@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+  
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+#score,
+#timer {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+  
+#score-value,
+#timer-value {
+    color: #8B008B; /* Purple color */
+}
+  
+#board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8B008B; /* Purple color */
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white; /* Add this line to set the text color */
+    font-size: 36px; /* Add this line to set the font size */
+  }
+  
+#board .tile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #8B4513; /* Wood-y color */
+    color: black;
+    font-size: 36px;
+    border-radius: 5px;
+}
+  
+  
+  
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+
+#word-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#word-input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #8B008B; /* Purple color */
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+  
+button:hover {
+    background-color: #800080; /* Darker shade of purple */
+}
+  
+button:active {
+    transform: translateY(1px);
+}
+
+#start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #start-button {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+
+.letter-selected {
+    background-color: #78866B; /* example of green tinted wood-y color */
+}
+
+  
+  #game-container {
+    text-align: center;
+  }
+  
+  
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+  
+.alert.success {
+    background-color: #008000; /* Green color */
+}
+  
+.alert.error {
+    background-color: #ff0000; /* Red color */
+}
+  
